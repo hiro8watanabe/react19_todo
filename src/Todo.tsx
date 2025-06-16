@@ -1,4 +1,4 @@
-import "./Todo.css";
+// import "./Todo.css";
 import { useState } from "react";
 import { InputTodos } from "./components/InputTodos";
 import { InCompleteTodos } from "./components/InCompleteTodos";
@@ -48,7 +48,8 @@ export const Todo = () => {
   };
 
   return (
-    <>
+    <div className="font-sans text-gray-600 w-[400px] m-auto mt-10">
+      <h1 className="text-2xl font-bold text-center">Todo List</h1>
       <InputTodos
         todoText={todoText}
         onChange={onChangeTodoText}
@@ -66,6 +67,6 @@ export const Todo = () => {
         onClickRestore={onClickCompleteRestore}
         onClickDelete={onClickCompleteDelete}
       />
-    </>
+    </div>
   );
 };
