@@ -1,4 +1,3 @@
-// import "./Todo.css";
 import { useState } from "react";
 import { InputTodos } from "./components/InputTodos";
 import { InCompleteTodos } from "./components/InCompleteTodos";
